@@ -41,7 +41,7 @@ export default function ViewsChart({ dailyViews }: ViewsChartProps) {
         text: 'Daily Views Trend (Last 7 Days)',
         font: {
           size: 16,
-          weight: '600',
+          weight: 'bold' as const,
         },
         color: '#374151',
         padding: 16,
@@ -69,7 +69,7 @@ export default function ViewsChart({ dailyViews }: ViewsChartProps) {
         ticks: {
           color: '#6B7280',
           font: {
-            weight: '500',
+            weight: 'bold' as const,
           }
         }
       },
@@ -82,7 +82,7 @@ export default function ViewsChart({ dailyViews }: ViewsChartProps) {
         ticks: {
           color: '#6B7280',
           font: {
-            weight: '500',
+            weight: 'bold' as const,
           },
           callback: function(value: any) {
             return value.toLocaleString();
